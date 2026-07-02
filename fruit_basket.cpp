@@ -31,4 +31,18 @@ int main() {
         std::cout << "Bananas: " << bananas << "\n";
 
         std::cout << "\nContinue exploring? (y/n): ";
-        std::cin >
+        std::cin >> choice;
+    }
+
+    int total = apples * 2 + bananas;
+
+    std::cout << "\nAdventure Complete\n";
+    std::cout << "Final Score: " << total << "\n";
+
+    if (total >= 12)
+        std::cout << "Excellent harvest!\n";
+    else
+        std::cout << "Thanks for playing!\n";
+
+    return 0;
+}
